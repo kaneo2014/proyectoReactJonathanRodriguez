@@ -29,7 +29,10 @@ const ItemListContainer = ({children}) => {
 
         return(
             <div className='container'>
-                {children}  
+            <div className='containerT'>
+                {children}
+                <h2>{categoryId}</h2>
+            </div>           
             {loading?<Spinner/>:<Itemlist products={products}/>}
     
             </div>
