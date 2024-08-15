@@ -1,6 +1,7 @@
 import Cartwidget from '../CartWidget/Cartwidget'
 import './Navbar.scss'
-
+import { Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 
 const Navbar=()=>{
@@ -8,21 +9,21 @@ const Navbar=()=>{
 
         <nav className='navBar'>
             <div className='navBarLogo'>
-            <p> LOGO</p>
+            <Link to="/"><p>LOGO</p></Link>
             </div>
             <div className='navBarLin'>
                 <ul>
                     <li>
-                        <a href="">Nosotros</a>
+                        <Link to="/Nosotros" className='link'>Nosotros</Link>
                     </li>
                     <li>
-                        <a href="">Productos</a>
+                        <Link to="/category/Desayunos"className='link'>Desayunos</Link>
                     </li>
                     <li>
-                        <a href="">Contactenos</a>
+                        <Link to="/category/Postres"className='link'>Postres</Link>
                     </li>
                     <li>
-                        <a href="">Promociones</a>
+                        <Link to="/category/Bebidas"className='link'>Bebidas</Link>
                     </li>
                 </ul>
             </div>

@@ -1,9 +1,12 @@
 import './Cartwidget.scss'
+import { FaShoppingCart } from "react-icons/fa";
 
 const Cartwidget=()=>{
     return(
         <div className='navCart'>
-            <h1>2</h1>    
+            
+            <FaShoppingCart size="2rem" color='blue' />
+            <h1>2</h1>  
         </div>
     )
 

@@ -1,0 +1,19 @@
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgb(0, 0,0,0.1);
+    transition: transform 0.2s ease-in-out, box-chadow 0.2s ease-in-out ;
+    img{
+        max-width: 100%;
+        border-radius: 8px 9px 0 0;
+    }
+}
+
+.card.hover{
+    box-shadow:0 4px 16px rgb(0, 0,0,0.1); ;
+}
+.card:active{
+    transform: translateY(-10px);
+}
