@@ -2,7 +2,7 @@
     {"id":1234,
     "name": "Caldo de Costilla",
     "price":8000,
-    "stock":100,
+    "stock":10,
     "img":"/Imagenes/CaldodeCostilla.png",
     "description": "Caldo de costillar con Papa ",
     "category":"Desayunos"
