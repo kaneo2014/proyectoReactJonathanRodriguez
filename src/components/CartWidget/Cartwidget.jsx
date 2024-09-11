@@ -1,13 +1,17 @@
+import { useContext } from 'react';
 import './Cartwidget.scss'
 import { FaShoppingCart } from "react-icons/fa";
-
+import { CartContext } from '../../context/CartContex/CartProvider';
+import { Link } from 'react-router-dom';
 const Cartwidget=()=>{
+
+    const {getTotalProducts}=useContext(CartContext)
     return(
-        <div className='navCart'>
+        <Link to={"/cart"} className='navCart'>
             
             <FaShoppingCart size="2rem" color='blue' />
-            <h1>2</h1>  
-        </div>
+            {getTotalProducts()===0 ?null:getTotalProducts()}
+        </Link>
     )
 
 }

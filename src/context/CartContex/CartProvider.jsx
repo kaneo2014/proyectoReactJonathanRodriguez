@@ -6,29 +6,51 @@ export const CartProvider=({children})=>{
     const[cart,setCart] =useState([])
     //Agregar al carrito
     const addItems= (product,quantity) =>{
+   if(isInCart(product.id)){
+    setCart(
+        cart.map((item)=>
+            item.product.id ===product.id
+        ?{...item,quantity:item.quantity+quantity}:item
+        )
+    );
+    }else{
         setCart([...cart,{product,quantity}])
+    }
     };
     
     //Ver si esta en el carrito
-    const isInCart=() =>{};
+    const isInCart=(productId) =>{
+        return cart.some((item)=>item.product.id ===productId)
+    };
 
     //Limpiar el carrito
 
-    const clearCart=() =>{};
+    const clearCart=() =>{
+        setCart([])
+    };
 
     //Total del carrito
 
-    const getTotal=()=> {};
+    const getTotal=()=> {
+        return cart.reduce((total,item)=>total + item.product.price*item.quantity,0)
+
+    };
 
     //Total de productos en el carrito
 
-    const getTotalProducts=()=>{}
+    const getTotalProducts=()=>{
+
+        return cart.reduce((total,item)=>total + item.quantity,0)
+    }
 
     // Eliminar PRODUCTO DEL CARRITO
 
-    const removeItem=()=>{
+    const removeItem=(productId)=>{
+        setCart(cart.filter((item)=>item.product.id !== productId))
 
-    } 
+    }
+    
+  
         return(
         <CartContext.Provider value={{
             cart,
