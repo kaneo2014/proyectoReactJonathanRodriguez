@@ -1,0 +1,100 @@
+.cart-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #232222;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cardDeF {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardDeF img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .cardDeF p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .cardDeF button {
+    background-color: #ff4d4d;
+    color: rgb(11, 10, 10);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cardDeF button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  .summary {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .summary h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .ButtonCD {
+    background-color: #007bff;
+    color: rgb(16, 15, 15);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 20%;
+    margin: 10px 0;
+  }
+  
+  .ButtonCD:hover {
+    background-color: #0056b3;
+  }
+  
+  button.clear-cart {
+    background-color: #ff4d4d;
+  }
+  
+  button.clear-cart:hover {
+    background-color: #ff1a1a;
+  }
+  
+  a {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: rgb(31, 29, 29);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
